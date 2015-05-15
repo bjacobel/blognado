@@ -7,7 +7,6 @@ class Liveblog(models.Model):
     slug = models.SlugField(blank=True)
     description = models.TextField()
 
-
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.name)
@@ -16,5 +15,9 @@ class Liveblog(models.Model):
 class Update(models.Model):
     author = models.ForeignKey(User)
     blog = models.ForeignKey(Liveblog)
+
     content_text = models.TextField()
     content_photo = models.ImageField()
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
