@@ -23,8 +23,8 @@ class Update(models.Model):
     author = models.ForeignKey(User)
     blog = models.ForeignKey(Liveblog)
 
-    content_text = models.TextField()
-    content_photo = models.ImageField()
+    content_text = models.TextField(null=True, blank=True)
+    content_photo = models.ImageField(null=True, blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
