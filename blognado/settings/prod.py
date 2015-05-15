@@ -1,5 +1,5 @@
 from os import environ
-from djangobase.settings.common import *
+from blognado.settings.common import *
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
@@ -40,12 +40,12 @@ CACHES = {
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
-AWS_STORAGE_BUCKET_NAME = "djangobase"
+AWS_STORAGE_BUCKET_NAME = "blognado"
 AWS_ACCESS_KEY_ID = environ.get("AWS_ACCESS_KEY_ID", "")
 AWS_SECRET_ACCESS_KEY = environ.get("AWS_SECRET_ACCESS_KEY", "")
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_EXPIRE = 63115200
-S3_URL = 'http://djangobase.s3.amazonaws.com/'
+S3_URL = 'http://blognado.s3.amazonaws.com/'
 
 STATIC_URL = S3_URL
 MEDIA_URL = S3_URL

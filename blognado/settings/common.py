@@ -1,5 +1,5 @@
 """
-Django settings for djangobase project.
+Django settings for blognado project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/dev/topics/settings/
@@ -37,8 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     # Local apps
-    'djangobase.apps.core',
-    'djangobase.apps.api',
+    'blognado.apps.core',
+    'blognado.apps.api',
 
     # for the frontend
     'compressor',
@@ -59,7 +59,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'djangobase.urls'
+ROOT_URLCONF = 'blognado.urls'
 
 WSGI_APPLICATION = 'wsgi.application'
 
@@ -120,7 +120,7 @@ LOGGING = {
         }
     },
     'loggers': {
-        'djangobase': {
+        'blognado': {
             'handlers': ['console'],
             'propagate': True,
             'level': 'INFO',
@@ -155,7 +155,7 @@ TEMPLATES = [
 ### django-rest-framework ###
 
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_SERIALIZER_CLASS': 'djangobase.apps.api.pagination.CustomPaginationSerializer',
+    'DEFAULT_PAGINATION_SERIALIZER_CLASS': 'blognado.apps.api.pagination.CustomPaginationSerializer',
     'PAGINATE_BY': 20,                  # Default to 20
     'PAGINATE_BY_PARAM': 'limit',       # Allow client to override, using `?limit=xxx`.
     'MAX_PAGINATE_BY': 100,             # Maximum limit allowed when using `?limit=xxx`.

@@ -1,4 +1,4 @@
-###djangobase
+###blognado
 [![Build Status](https://img.shields.io/travis/bjacobel/django-base/master.svg?style=flat)](https://travis-ci.org/bjacobel/django-base) [![Coverage Status](https://img.shields.io/coveralls/bjacobel/django-base/master.svg?style=flat)](https://coveralls.io/r/bjacobel/django-base?branch=master)
 ---
 
@@ -19,8 +19,8 @@ You'll need:
 
 2. Run the following commands in psql to set up the Postgres database:
 
-        CREATE ROLE djangobase WITH LOGIN CREATEDB PASSWORD 'djangobase';
-        CREATE DATABASE djangobase;
+        CREATE ROLE blognado WITH LOGIN CREATEDB PASSWORD 'blognado';
+        CREATE DATABASE blognado;
 
 3. Install Python dependencies with:
 
@@ -58,8 +58,8 @@ For testing purposes, you may use the included Vagrantfile to provision a test V
 
     vagrant up
     ansible-playbook -i ansible/inventory/vagrant ansible/deploy.yml
-    sudo echo "192.168.100.100 djangobase.local" >> /etc/hosts
+    sudo echo "192.168.100.100 blognado.local" >> /etc/hosts
 
-and visit [http://djangobase.local](http://djangobase.local) in your browser if the deploy is successful.
+and visit [http://blognado.local](http://blognado.local) in your browser if the deploy is successful.
 
-The project is currently deployed at [djangobase.bjacobel.com](http://djangobase.bjacobel.com).
+The project is currently deployed at [blognado.bjacobel.com](http://blognado.bjacobel.com).

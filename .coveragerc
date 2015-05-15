@@ -1,9 +1,9 @@
 [run]
-source = djangobase
+source = blognado
 omit =
-    djangobase/apps/core/migrations/*,
-    djangobase/apps/core/management/*,
-    djangobase/settings/*,
+    blognado/apps/core/migrations/*,
+    blognado/apps/core/management/*,
+    blognado/settings/*,
     *__init__*,
     *.html
 

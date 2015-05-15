@@ -20,7 +20,7 @@ nginx_server_name: "{{ inventory_hostname }}"
 
 
 # Application settings.
-django_settings_file: djangobase.settings.prod
+django_settings_file: blognado.settings.prod
 django_debug: True
 run_django_collectstatic: no
 run_django_compress: yes

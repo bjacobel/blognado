@@ -4,11 +4,11 @@ ansible/env_vars/secure.yml
 *.pyc
 
 # No static files
-djangobase/static/*
-~djangobase/static/bower_components
+blognado/static/*
+~blognado/static/bower_components
 
 # No media
-djangobase/media/*
+blognado/media/*
 
 # No logs
 /logs/*

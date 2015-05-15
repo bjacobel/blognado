@@ -1,4 +1,4 @@
-from djangobase.settings.common import *
+from blognado.settings.common import *
 import yaml
 
 DEBUG = True
@@ -43,7 +43,7 @@ INTERNAL_IPS = (
 INSTALLED_APPS += (
 )
 
-TEST_RUNNER = 'djangobase.settings.tests.ReusableRunner'
+TEST_RUNNER = 'blognado.settings.tests.ReusableRunner'
 
 with open(os.path.normpath(os.path.join(SITE_ROOT, "ansible/env_vars/secure.yml")), "rb") as f:
     secrets = yaml.load(f)

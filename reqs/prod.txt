@@ -1,6 +1,6 @@
 -r common.txt
 gunicorn==19.3
-cython=0.22
+cython==0.22
 greenlet==0.4.6
 git+git://github.com/fantix/gevent.git@71dd2d4d1d3332ed87f79c19d54d97bdcacdcf6d#egg=gevent
 git+git://github.com/fuhrysteve/gevent-socketio.git@ec5cd40a9eae06f16ac657a03656bc90f82cdf41#egg=gevent-socketio

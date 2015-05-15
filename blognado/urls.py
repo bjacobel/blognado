@@ -1,8 +1,8 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf import settings
-from djangobase.apps.api import urls as api_urls
-from djangobase.apps.core import urls as core_urls
+from blognado.apps.api import urls as api_urls
+from blognado.apps.core import urls as core_urls
 
 
 urlpatterns = [

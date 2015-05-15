@@ -3,8 +3,8 @@
 git_repo: ssh://git@github.com/bjacobel/django-base.git
 branch: develop
 
-application_name: djangobase
-project_name: djangobase
+application_name: blognado
+project_name: blognado
 
 ssl_dest_dir: /etc/ssl
 

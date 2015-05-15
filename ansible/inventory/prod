@@ -1,2 +1,2 @@
 [prod]
-djangobase.bjacobel.com ansible_ssh_host= ansible_ssh_user=root
+blognado.bjacobel.com ansible_ssh_host= ansible_ssh_user=root

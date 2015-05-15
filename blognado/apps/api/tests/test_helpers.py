@@ -1,8 +1,8 @@
 import json
 from rest_framework.test import APIClient
-from djangobase.apps.core import models
-from djangobase.apps.core.tests import factories
-from djangobase.apps.core.helpers import arbitrary_serialize
+from blognado.apps.core import models
+from blognado.apps.core.tests import factories
+from blognado.apps.core.helpers import arbitrary_serialize
 
 
 def authorize(client):

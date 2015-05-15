@@ -1,6 +1,6 @@
 def arbitrary_serialize(obj):
     if obj.__class__.__name__ == "a class":
-        # from djangobase.apps.api.serializers.thatclass import ThatClassSerializer
+        # from blognado.apps.api.serializers.thatclass import ThatClassSerializer
         # return ThatClassSerializer(obj).data
         pass
     else:

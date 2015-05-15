@@ -1,6 +1,6 @@
 ---
 
-site_url: djangobase.bjacobel.com
+site_url: blognado.bjacobel.com
 code_source: git
 ssh_user: bjacobel
 
@@ -20,7 +20,7 @@ nginx_server_name: "{{ inventory_hostname }}"
 
 
 # Application settings.
-django_settings_file: djangobase.settings.prod
+django_settings_file: blognado.settings.prod
 run_django_collectstatic: yes
 run_django_compress: yes
 setup_etc_hosts: no
