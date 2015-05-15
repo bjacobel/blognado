@@ -7,10 +7,17 @@ class Liveblog(models.Model):
     slug = models.SlugField(blank=True)
     description = models.TextField()
 
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ("-created_at",)
+
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.name)
         super(Liveblog, self).save(*args, **kwargs)
+
 
 class Update(models.Model):
     author = models.ForeignKey(User)
@@ -21,3 +28,6 @@ class Update(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ("-created_at",)
