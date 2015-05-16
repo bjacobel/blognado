@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}liveblogs | blognado{% endblock %}
+
+{% block content %}
+
+    {% for blog in liveblogs %}
+        <p>{{ blog.name }}</p>
+    {% endfor %}
+
+{% endblock %}

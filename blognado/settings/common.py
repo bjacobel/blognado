@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     # Local apps
     'blognado.apps.core',
     'blognado.apps.api',
+    'blognado.apps.sockets',
 
     # for the frontend
     'compressor',

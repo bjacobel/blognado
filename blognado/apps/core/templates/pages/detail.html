@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ blog.name }} | blognado{% endblock %}
+
+{% block content %}
+
+    <p>{{ blog.name }}</p>
+
+    <ul>
+        {% for update in updates %}
+            <li>
+                {{ update.content_text }}
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
